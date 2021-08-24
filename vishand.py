@@ -19,10 +19,12 @@ from io import BytesIO
 import pulp
 from pulp import LpMaximize, LpProblem, LpStatus, lpSum, LpVariable
 
+vhand= Image.open('vtext_small.png')
+st.image(vhand)
 def main():
     # st.title("Simulasi Realokasi Budget untuk memaksimalkan Efisiensi dan Omset")
-    vhand= Image.open('vtext_small.png')
-    st.image(vhand)
+#     vhand= Image.open('vtext_small.png')
+#     st.image(vhand)
     # menu = ["Sasaran Penerima Bantuan","Sebaran Program Pemerintah","Daftar Kandidat Penerima Bantuan","Pendaftaran UMKM"]
     menu = ['MSME Report and Analysis',"Government Benefits",'MSME Candidate List','OCA Dashboard']
     choice = st.sidebar.selectbox("Select Menu", menu)
