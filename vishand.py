@@ -22,7 +22,7 @@ from pulp import LpMaximize, LpProblem, LpStatus, lpSum, LpVariable
 def main():
     # st.title("Simulasi Realokasi Budget untuk memaksimalkan Efisiensi dan Omset")
     vhand= Image.open('vhand_text.png')
-    st.sidebar.image(vhand)
+    st.image(vhand)
     # menu = ["Sasaran Penerima Bantuan","Sebaran Program Pemerintah","Daftar Kandidat Penerima Bantuan","Pendaftaran UMKM"]
     menu = ['MSME Report and Analysis',"Government Benefits",'MSME Candidate List','OCA Dashboard']
     choice = st.sidebar.selectbox("Select Menu", menu)
